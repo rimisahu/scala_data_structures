@@ -26,4 +26,7 @@ object inBuilt_stack extends App {
 
   println("top of stack: "+ fruits.top)
 
+  //TODO: test functions here: length,update,pushAll,clear,toList,foreach
+
+
 }
