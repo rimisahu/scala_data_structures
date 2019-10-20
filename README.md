@@ -7,7 +7,7 @@
 -  scala info
     - https://docs.scala-lang.org/
 
-*SPARK*
+**SPARK**
 
 - release versions/info:
     - https://mvnrepository.com/artifact/org.apache.spark
