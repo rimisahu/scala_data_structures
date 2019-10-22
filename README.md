@@ -25,3 +25,6 @@
 - needs
     - jdk
     - active local host
+    
+**LOCAL HOST**
+- http://localhost:8080/
