@@ -18,3 +18,10 @@
 - release versions/info:
     - https://mvnrepository.com/artifact/org.apache.spark
 
+**JENKINS**
+
+- reference
+    - https://jenkins.io/doc/pipeline/tour/getting-started/
+- needs
+    - jdk
+    - active local host
