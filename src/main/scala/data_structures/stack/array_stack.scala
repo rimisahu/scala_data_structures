@@ -3,7 +3,7 @@ package data_structures.stack
 object array_stack extends App{
 
   /* basic functions to implement
-  1. is empty/null : check_status
+  1. is empty/null : check_empty
   2. push : push
   3. pop :  pop
   4. does it exist? - pending
@@ -19,9 +19,9 @@ object array_stack extends App{
   val test_arr2=Array.empty[Int]
   var test_arr3 = Array(7)
 
-  val test1=check_status(test_arr1)
+  val test1=check_empty(test_arr1)
   println(test1)
-  val test2=check_status(test_arr2)
+  val test2=check_empty(test_arr2)
   println(test2)
 
   val test3=push(test_arr1,3)
@@ -42,12 +42,10 @@ object array_stack extends App{
   test7.foreach(println)
 
 
-
-
-  def check_status(arr: Array[Int]): Boolean ={
-    arr.isEmpty
+  def check_empty(arr: Array[Int]): Boolean ={
     //true if array is empty
     //else false
+    arr.isEmpty
   }
 
   def push(arr: Array[Int], push_val: Int): Array[Int] ={
@@ -59,15 +57,11 @@ object array_stack extends App{
 
     var arr_new=Array.empty[Int]
 
-    if (!check_status(arr)){
+    if (!check_empty(arr)){
       val arr_length=arr.length
       arr_new = arr.slice(1,arr_length-1)
-
     } else arr_new=arr
-
     arr_new
-
   }
-
 
 }
