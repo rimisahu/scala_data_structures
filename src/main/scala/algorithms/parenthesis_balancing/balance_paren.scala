@@ -4,6 +4,8 @@ import scala.collection.mutable.Stack
 
 object balance_paren extends App {
 
+  //basic implementation
+
   /* pseduocode
   1. read string, iterate over it
   2. check for open parenthesis.
@@ -34,6 +36,11 @@ object balance_paren extends App {
   val testset_07 = "]["
   println("string -->" +testset_07+" is balanced? \t"+ check_paren_balance(testset_07))
 
+  val testset_08 = ""
+  println("string -->" +testset_08+" is balanced? \t"+ check_paren_balance(testset_08))
+
+  val testset_09 = "()()()()()(((((((((((((((((((((((((((((((((((((((())))))))))))))))))))))))))))))))))"
+  println("string -->" +testset_09+" is balanced? \t"+ check_paren_balance(testset_09))
 
   def check_paren_balance(input_string: String): Boolean ={
 
