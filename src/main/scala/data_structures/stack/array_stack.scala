@@ -64,4 +64,62 @@ object array_stack extends App{
     arr_new
   }
 
+  //--------------other reference
+
+  //reference: https://www.techiedelight.com/stack-implementation-in-java/
+  //classtag info: https://docs.scala-lang.org/overviews/reflection/typetags-manifests.html  ; https://dzone.com/articles/scala-classtag-a-simple-use-case
+  //https://stackoverflow.com/questions/12218641/scala-what-is-a-typetag-and-how-do-i-use-it
+  //queue java: https://www.programcreek.com/2014/07/implement-a-queue-using-an-array-in-java/
+
+
+//
+//  class Stack(var capacity: Int) // Constructor to initialize stack
+//  {
+//    arr = new Array[Int](capacity)
+//    top = -1
+//    private var arr = null
+//    private var top = 0
+//
+//    // Utility function to add an element x in the stack
+//    def push(x: Int): Unit = {
+//      if (isFull) {
+//        System.out.println("OverFlow\nProgram Terminated\n")
+//        System.exit(1)
+//      }
+//      System.out.println("Inserting " + x)
+//      arr({
+//        top += 1; top
+//      }) = x
+//    }
+//
+//    // Utility function to pop top element from the stack
+//    def pop: Int = { // check for stack underflow
+//      if (isEmpty) {
+//        System.out.println("UnderFlow\nProgram Terminated")
+//        System.exit(1)
+//      }
+//      System.out.println("Removing " + peek)
+//      // decrease stack size by 1 and (optionally) return the popped element
+//      arr({
+//        top -= 1; top + 1
+//      })
+//    }
+//
+//    // Utility function to return top element in a stack
+//    def peek: Int = {
+//      if (!isEmpty) return arr(top)
+//      else System.exit(1)
+//      -1
+//    }
+//
+//    // Utility function to return the size of the stack
+//    def size: Int = top + 1
+//
+//    // Utility function to check if the stack is empty or not
+//    def isEmpty: Boolean = top == -1 // or return size() == 0;
+//
+//    // Utility function to check if the stack is full or not
+//    def isFull: Boolean = top == capacity - 1 // or return size() == capacity;
+//  }
+
 }

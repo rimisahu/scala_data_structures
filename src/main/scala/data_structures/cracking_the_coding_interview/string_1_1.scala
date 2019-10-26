@@ -10,7 +10,6 @@ object string_1_1 extends App {
    */
 
   /*
-
   1.  iterate over the string
     2. check if character matches the rest of the string
     3. if it does then return false
@@ -41,7 +40,6 @@ object string_1_1 extends App {
 
       substring_val.foreach{ substing_char_val =>
         if (char_val==substing_char_val){
-
           println("characters that match"+char_val)
           return false
         }
