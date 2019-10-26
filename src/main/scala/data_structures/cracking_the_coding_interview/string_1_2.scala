@@ -32,8 +32,6 @@ object string_1_2 extends App{
   val testset_05 = "asdf;jk23r90sa()#$*"
   println("\ninput string -->[" +testset_05+"] output string -->"+ reverse_string(testset_05))
 
-
-
   println("----")
 
   def reverse_string(string_val: String): String ={
@@ -45,9 +43,6 @@ object string_1_2 extends App{
     }
     if (string_size==1){
       return string_val
-    }
-    if (string_size==2){
-      return string_val.slice(1,2)+string_val.slice(0,1)
     }
     val left_index=0
     val mid_index=string_size/2
