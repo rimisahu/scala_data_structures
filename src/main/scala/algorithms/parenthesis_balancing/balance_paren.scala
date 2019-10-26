@@ -14,71 +14,55 @@ object balance_paren extends App {
    */
 
   val testset_01 = "[[([)[{}]]]]"
-  println("testset_01 is balanced? "+ check_paren_balance(testset_01))
+  println("string -->" +testset_01+" is balanced? \t"+ check_paren_balance(testset_01))
 
   val testset_02 = "({}{[][]})"
-  println("testset_02 is balanced? "+ check_paren_balance(testset_02))
+  println("string -->" +testset_02+" is balanced? \t"+ check_paren_balance(testset_02))
 
   val testset_03 = "({[]})"
-  println("testset_03 is balanced? "+ check_paren_balance(testset_03))
+  println("string -->" +testset_03+" is balanced? \t"+ check_paren_balance(testset_03))
 
   val testset_04 = "(]})"
-  println("testset_04 is balanced? "+ check_paren_balance(testset_04))
+  println("string -->" +testset_04+" is balanced? \t"+ check_paren_balance(testset_04))
 
   val testset_05 = "(]"
-  println("testset_05 is balanced? "+ check_paren_balance(testset_05))
+  println("string -->" +testset_05+" is balanced? \t"+ check_paren_balance(testset_05))
 
   val testset_06 = "taxi {woo}! [hoo]!"
-  println("testset_06 is balanced? "+ check_paren_balance(testset_06))
+  println("string -->" +testset_06+" is balanced? \t"+ check_paren_balance(testset_06))
 
-//  val testset_07 = "]["
-//  println("testset_07 is balanced? "+ check_paren_balance(testset_07))
+  val testset_07 = "]["
+  println("string -->" +testset_07+" is balanced? \t"+ check_paren_balance(testset_07))
 
 
   def check_paren_balance(input_string: String): Boolean ={
-
-    val input_length=input_string.size
-
-    println("string size: "+ input_length)
 
     var paren_stack = Stack[String]()
     var balanced_flag=false
 
     input_string.foreach { substing_val =>
-      println(substing_val)
             if (substing_val=='(' || substing_val=='[' || substing_val=='{'){
               paren_stack.push(substing_val.toString)
-              println("pushing: "+substing_val)
             } else if (substing_val==')' || substing_val==']' || substing_val=='}'){
+
+              if (paren_stack.isEmpty) return false
               val top_stack_value=paren_stack.top
               val substr_val=substing_val.toString
 
-              println("strings---: "+top_stack_value+" "+substr_val)
-
               if ( substr_val == "}" && top_stack_value=="{"){
-                println("popping: "+substing_val)
                 paren_stack.pop()
               } else if (substr_val == ")" && top_stack_value=="("){
-                println("popping: "+substing_val)
                 paren_stack.pop()
               } else if (substr_val == "]" && top_stack_value=="["){
-                println("popping: "+substing_val)
                 paren_stack.pop()
-              } else (
-                return false
-              )
+              } else return false
             }
     }
 
     if (paren_stack.isEmpty){
       balanced_flag=true
-      println("string is balanced!")
     }
-
     balanced_flag
-
   }
-
-
 
 }
