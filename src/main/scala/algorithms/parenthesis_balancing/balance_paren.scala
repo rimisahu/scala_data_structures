@@ -19,6 +19,21 @@ object balance_paren extends App {
   val testset_02 = "({}{[][]})"
   println("testset_02 is balanced? "+ check_paren_balance(testset_02))
 
+  val testset_03 = "({[]})"
+  println("testset_03 is balanced? "+ check_paren_balance(testset_03))
+
+  val testset_04 = "(]})"
+  println("testset_04 is balanced? "+ check_paren_balance(testset_04))
+
+  val testset_05 = "(]"
+  println("testset_05 is balanced? "+ check_paren_balance(testset_05))
+
+  val testset_06 = "taxi {woo}! [hoo]!"
+  println("testset_06 is balanced? "+ check_paren_balance(testset_06))
+
+//  val testset_07 = "]["
+//  println("testset_07 is balanced? "+ check_paren_balance(testset_07))
+
 
   def check_paren_balance(input_string: String): Boolean ={
 
@@ -49,7 +64,9 @@ object balance_paren extends App {
               } else if (substr_val == "]" && top_stack_value=="["){
                 println("popping: "+substing_val)
                 paren_stack.pop()
-              }
+              } else (
+                return false
+              )
             }
     }
 
