@@ -8,3 +8,33 @@
 
 1.3
     - Given two strings, write a method to decide if one is a permutation of the other
+
+1.4
+    - Write a method to replace all spaces in a string with '%20'.
+    - You may assume that the string has sufficient space at the end of the string to hold the additional characters,
+    - and that you are given the "true" length of the string
+    - Example:
+        - input: "Mr John Smith    " 13
+        - output: "Mr%20John%20Smith"
+
+1.5
+    - Implement a method to perform basic string compression using the counts of repeated characters
+    - For example, the string aaabcccccaaa would become a2b1c5a3.
+    - if the "compressed" string would not become smaller than the original string,
+    - your method should return the original string.
+    - you can assume the sting has only upper and lower case letters (a-z).
+
+1.6
+    - Given and image represented by an NxN matric, where each pixel in the image is 4 bytes,
+    - write a method to rotate the image by 90 degrees
+    - can you do this in place?
+
+1.7
+    - Write an algorithm such that if an element in an MxN matrix is 0
+    - its entire row and column are set to 0
+
+1.8
+    - assume you have a method isSubstring which checks if one word is a substring of another
+    - given 2 strings s1 and s2, write code to check if s2 is a rotation of s1, using only one call to isSubstring
+    - example
+        - waterbottle is a rotation of erbottlewat
