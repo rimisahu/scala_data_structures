@@ -7,12 +7,12 @@ object merge extends App{
   *
   * ASSUMPTIONS
   * - For the merge function to work, the left and right arrays should have atleast one value
-  *
+  * - not an in-place sorting algorithm
   *
   * TIME COMPLEXITY
-    * best case : (n-1)(n-2)(n-3)...(1) = O(n^2)
-    * average case : (n-1)(n-2)(n-3)...(1) = O(n^2)
-    * worst case : (n-1)(n-2)(n-3)...(1) = O(n^2)
+    * best case : O(n*log(n))
+    * average case : O(n*log(n))
+    * worst case : O(n*log(n))
    *
    */
 
