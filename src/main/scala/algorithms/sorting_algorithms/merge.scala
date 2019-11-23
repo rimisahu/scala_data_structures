@@ -3,7 +3,10 @@ package algorithms.sorting_algorithms
 object merge extends App{
 
   /*
-  *
+  * divide and conquer mechanism
+  * break the array until <2
+  * then start merge process, where the values are sorted out
+  * use of recursion on it
   *
   * ASSUMPTIONS
   * - For the merge function to work, the left and right arrays should have atleast one value
