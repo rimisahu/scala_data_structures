@@ -10,6 +10,10 @@ object selection extends App{
     * Move pivot counter to 1 
     * Find min after that Swap
     * Rinse <-> Repeat
+    *
+    * TIME COMPLEXITY
+    * best case : (n-1)(n-2)(n-3)...(1) = O(n^2)
+    * worst case : (n-1)(n-2)(n-3)...(1) = O(n^2)
     * */
 
     val testset_01 = Array(4,5,6,7,1,2,3)
