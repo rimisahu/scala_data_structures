@@ -23,13 +23,13 @@ object test {
     for (i <- 0 to 3) {
 
       for (j <- 0 to 3){
-        val iteration_sum = arr(i)(j) + arr(i)(j + 1) + arr(i)(j + 2)
-              + arr(i + 1)(j + 1)
-              + arr(i + 2)(j) + arr(i + 2)(j + 1) + arr(i + 2)(j + 2)
+        val iteration_sum = arr(i)(j) + arr(i)(j + 1) + arr(i)(j + 2) + arr(i + 1)(j + 1) + arr(i + 2)(j) + arr(i + 2)(j + 1) + arr(i + 2)(j + 2)
 
             println("iteration "+ i)
             println(iteration_sum)
-            println("first, last element: " + arr(i)(j) +"   "+arr(i + 2)(j + 2))
+            println("first row " + arr(i)(j) +"   "+arr(i)(j + 1) +"   "+ arr(i)(j + 2))
+            println("second row " + arr(i + 1)(j + 1))
+            println("third row " + arr(i + 2)(j) +"   "+arr(i + 2)(j + 1) +"   "+ arr(i + 2)(j + 2))
 
         if (max_val<iteration_sum){max_val=iteration_sum}
 
