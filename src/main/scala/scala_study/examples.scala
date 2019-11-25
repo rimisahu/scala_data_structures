@@ -1,4 +1,4 @@
-package scala_functions
+package scala_study
 
 object examples {
 
