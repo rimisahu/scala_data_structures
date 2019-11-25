@@ -3,6 +3,7 @@ import Array._
 
 //reference links:
 // - https://www.geeksforgeeks.org/scala-arrays/
+// - https://www.tutorialspoint.com/scala/scala_arrays.htm
 
 object arrays_test {
 
@@ -54,6 +55,47 @@ object arrays_test {
 
     println(names(0)(0) +"\t"+ names(0)(1)+"\t"+ names(0)(2))
     println(names(1)(0) +"\t"+ names(1)(1)+ "\t"+ names(1)(2))
+
+    println("\n------append one value>  :+ ")
+    val base_arr= Array(12,32,546)
+    val append_1= base_arr:+33
+    for (array_val <- append_1){
+      println(array_val)
+    }
+
+    println("\n------append multiple values> ++")
+    val append_2 = base_arr ++ Array(0,2)
+    for (array_val <- append_2){
+      println(array_val)
+    }
+
+    println("\n------prepend one value>  +: ")
+    val append_3= 33+:base_arr
+    for (array_val <- append_3){
+      println(array_val)
+    }
+
+//    println("\n------prepend multiple values> :++")
+//    val applend_4 = Array(0,2) :++ base_arr
+//    for (array_val <- append_4){
+//      println(array_val)
+//    }
+
+    println("\n------build array with range ")
+    val range_test_1=range(10,15)
+    for (array_val <- range_test_1){
+      println(array_val)
+    }
+
+    println("\n------build array with range and increment")
+    val range_test_2=range(10,30,4)
+    for (array_val <- range_test_2){
+      println(array_val)
+    }
+
+
+
+
 
   }
 
