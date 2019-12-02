@@ -94,6 +94,13 @@ object arrays_test {
     }
 
 
+    println("\n------build array with range and decrement")
+    val range_test_3=range(30,10,-4)
+    for (array_val <- range_test_3){
+      println(array_val)
+    }
+
+
 
 
 
